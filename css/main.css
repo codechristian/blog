@@ -47,21 +47,21 @@ a {
   text-align: right;
 }
 
+.nav a {
+ text-decoration: none;
+}
+
+.nav a:hover {
+ text-decoration: underline;
+}
+
+
 .nav-logo {
   float: left;
-  margin-top: -11px;
-  transition: transform 150ms ease-out;
+  margin-top: -27px;
 }
 
-.nav-logo:hover {
-  transform: scale(1.1);
-}
 
-.nav-logo img {
-  display: block;
-  max-height: 40px;
-  width: auto;
-}
 
 .nav-links {
   margin: 0;
@@ -85,7 +85,8 @@ a {
 }
 
 .nav-links a:hover {
-  color: #000;
+  text-decoration: underline;
+  color: rgb(44, 43, 43);
 }
 
 .content {
