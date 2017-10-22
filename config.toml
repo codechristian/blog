@@ -1,3 +1,30 @@
-baseURL = "http://example.org/"
+baseurl = "https://example.org"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Lithium Theme"
+theme = "hugo-lithium-theme"
+googleAnalytics = ""
+disqusShortname = ""
+relativeURLs = false
+
+[permalinks]
+    post = "/:year/:month/:day/:title/"
+    page = "/:title/"
+
+[[menu.main]]
+    name = "About"
+    url = "/about/"
+[[menu.main]]
+    name = "GitHub"
+    url = ""
+[[menu.main]]
+    name = "Twitter"
+    url = ""
+
+[params]
+    description = ""
+
+    [params.logo]
+    url = "logo.png"
+    width = 50
+    height = 50
+    alt = "Logo"
