@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lithium Theme</title>
+    <link>http://christianprado.com/blog/</link>
+    <description>Recent content on Lithium Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 21 Oct 2017 18:36:58 -0700</lastBuildDate>
+    
+	<atom:link href="http://christianprado.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello :) </title>
+      <link>http://christianprado.com/blog/2017/10/21/hello-/</link>
+      <pubDate>Sat, 21 Oct 2017 18:36:58 -0700</pubDate>
+      
+      <guid>http://christianprado.com/blog/2017/10/21/hello-/</guid>
+      <description>Hi this is my first post :)</description>
+    </item>
+    
+  </channel>
+</rss>
