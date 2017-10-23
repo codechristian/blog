@@ -30,7 +30,7 @@ First lets start with some simple HTML:  &amp;lt;h1&amp;gt;Duckrs The Duck&amp;l
       <description>NVM Node Version Manager lets us install and switch between several versions of node.js.
 First we should update our packages:  $ sudo apt-get update  
 Next we will install the latest version of NVM from this github repo. As of this post the most recent NVM is v0.33.5. We can use the following command to begin installation.
- $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash   Now follow the terminal instruction after the NVM install is comlete:  $ Close and reopen your terminal to start using nvm</description>
+ $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash   Now follow the terminal instruction after the NVM install is complete:  $ Close and reopen your terminal to start using nvm</description>
     </item>
     
     <item>
