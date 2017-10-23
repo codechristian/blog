@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Lithium Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 22 Oct 2017 22:38:55 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 23 Oct 2017 11:31:18 -0700</lastBuildDate>
     
 	<atom:link href="http://christianprado.com/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>CSS Shapes: Ellipse</title>
+      <link>http://christianprado.com/blog/2017/10/23/css-shapes-ellipse/</link>
+      <pubDate>Mon, 23 Oct 2017 11:31:18 -0700</pubDate>
+      
+      <guid>http://christianprado.com/blog/2017/10/23/css-shapes-ellipse/</guid>
+      <description>CSS Shapes CSS shapes allow floated images to have text flow around it based on the shape of the image.
+First lets start with some simple HTML:  &amp;lt;h1&amp;gt;Duckrs The Duck&amp;lt;/h1&amp;gt; &amp;lt;img src=&amp;ldquo;duck.jpg&amp;rdquo; alt=&amp;ldquo;Duckrs The Duck&amp;rdquo;&amp;gt; &amp;lt;p&amp;gt;Duckrs The Duck lives in a beautiful pond where he enjoys long swims and the peaceful sounds of nature.&amp;lt;/p&amp;gt;  
+Heres what the flow of text would look like without CSS shapes:  img { float: left; margin-right: 2em; margin-bottom: 0.</description>
+    </item>
     
     <item>
       <title>Installing Node.js With NVM On Ubuntu Using Terminal</title>

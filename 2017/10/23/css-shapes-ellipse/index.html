@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>CSS Shapes: Ellipse - Lithium Theme</title>
+<meta property="og:title" content="CSS Shapes: Ellipse - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="http://christianprado.com/blog/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://christianprado.com/blog/" class="nav-logo">
+    <h1>Blog</h1>
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="http://christianprado.com">Christian Prado</a></li>
+    
+    <li><a href="https://github.com/codechristian">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">CSS Shapes: Ellipse</h1>
+
+    
+    <span class="article-date">October 23, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h2 id="css-shapes">CSS Shapes</h2>
+
+<p>CSS shapes allow floated images to have text flow around it based on the shape of the image.</p>
+
+<p>First lets start with some simple HTML:
+<pre class="code">
+<code>
+ &lt;h1&gt;Duckrs The Duck&lt;/h1&gt;
+ &lt;img src=&ldquo;duck.jpg&rdquo; alt=&ldquo;Duckrs The Duck&rdquo;&gt;
+ &lt;p&gt;Duckrs The Duck lives in a beautiful pond where he enjoys long swims and the peaceful sounds of nature.&lt;/p&gt;
+</code>
+</pre></p>
+
+<p>Heres what the flow of text would look like without CSS shapes:
+<pre class="code">
+<code>
+ img {
+     float: left;
+     margin-right: 2em;
+     margin-bottom: 0.5em;
+     border-radius: 50%;
+ }
+</code>
+</pre></p>
+
+<h3 id="duckrs-the-duck">Duckrs The Duck</h3>
+
+<p><img src="/blog/images/duck.jpg" alt="Duckrs The Duck" width="320" style="float: left;
+     margin-right: 2em;
+     margin-bottom: 0.5em;
+     border-radius: 50%;"></p>
+
+<p>Phasellus ipsum libero, feugiat nec ex vel, sollicitudin laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed mauris sapien. Sed ac sagittis odio. Nullam facilisis at urna nec semper. Integer pulvinar semper erat, eu blandit magna dapibus sollicitudin. Proin nec iaculis risus. Ut tristique eros sapien.</p>
+
+<p>With CSS shapes we can manipulate how the text flows around the image. Here we are using the ellipse property :
+<pre class="code">
+<code>
+ img {
+     float: left;
+     margin-right: 2em;
+     margin-bottom: 0.5em;
+     border-radius: 50%;
+     shape-outside: ellipse(45% 45%);
+ }
+</code>
+</pre></p>
+
+<h3 id="duckrs-the-duck-1">Duckrs The Duck</h3>
+
+<p><img src="/blog/images/duck.jpg" alt="Duckrs The Duck" width="320" style="float: left;
+     margin-right: 2em;
+     margin-bottom: 0.5em;
+     border-radius: 50%;
+     shape-outside: ellipse(45% 45%);"></p>
+
+<p>Phasellus ipsum libero, feugiat nec ex vel, sollicitudin laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed mauris sapien. Sed ac sagittis odio. Nullam facilisis at urna nec semper. Integer pulvinar semper erat, eu blandit magna dapibus sollicitudin. Proin nec iaculis risus. Ut tristique eros sapien.</p>
+
+<p>You can find out more about CSS shapes <a href="https://www.w3.org/TR/css-shapes-1/#funcdef-ellipse">by heading over to the w3c website</a>.</p>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://christianprado.com/blog/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://christianprado.com/blog/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
