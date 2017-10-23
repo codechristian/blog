@@ -248,6 +248,20 @@ a {
   margin-left: 2px;
 }
 
+pre {
+  overflow:auto;
+}
+
+.code {
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.code p {
+  padding: 0 15px;
+}
+
 @media (min-width: 600px) {
   .header {
     padding: 25px 0;
@@ -311,7 +325,7 @@ a {
     color: #fff;
     border-radius: 10px;
   }
-
+  
   .code p {
     padding: 0 15px;
   }
