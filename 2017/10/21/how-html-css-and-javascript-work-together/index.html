@@ -128,7 +128,15 @@
 
     </div>
 
-    
+    <script>
+      const button = document.querySelector(‘.ex-js’);
+
+      const changeText = () => {
+        button.innerText = “Hello World!”;
+      }
+
+     button.addEventListener(‘click’, changeText);
+   </script>
   </body>
 </html>
 
