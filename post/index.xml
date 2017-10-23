@@ -6,10 +6,22 @@
     <description>Recent content in Posts on Lithium Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Oct 2017 20:35:11 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 22 Oct 2017 22:38:55 -0700</lastBuildDate>
     
 	<atom:link href="http://christianprado.com/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Installing Node.js With NVM On Ubuntu Using Terminal</title>
+      <link>http://christianprado.com/blog/2017/10/22/installing-node.js-with-nvm-on-ubuntu-using-terminal/</link>
+      <pubDate>Sun, 22 Oct 2017 22:38:55 -0700</pubDate>
+      
+      <guid>http://christianprado.com/blog/2017/10/22/installing-node.js-with-nvm-on-ubuntu-using-terminal/</guid>
+      <description>NVM Node Version Manager lets us install and switch between several versions of node.js.
+First we should update our packages:  $ sudo apt-get update  
+Next we will install the latest version of NVM from this github repo. As of this post the most recent NVM is v0.33.5. We can use the following command to begin installation.
+ $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash   Now follow the terminal instruction after the NVM install is comlete:  $ Close and reopen your terminal to start using nvm</description>
+    </item>
     
     <item>
       <title>How HTML, CSS, and JavaScript Work Together</title>

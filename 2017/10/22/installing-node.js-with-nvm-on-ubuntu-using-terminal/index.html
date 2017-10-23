@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.30.2" />
 
 
-<title>How HTML, CSS, and JavaScript Work Together - Lithium Theme</title>
-<meta property="og:title" content="How HTML, CSS, and JavaScript Work Together - Lithium Theme">
+<title>Installing Node.js With NVM On Ubuntu Using Terminal - Lithium Theme</title>
+<meta property="og:title" content="Installing Node.js With NVM On Ubuntu Using Terminal - Lithium Theme">
 
 
 
@@ -49,63 +49,76 @@
     <span class="article-duration">1 min read</span>
     
 
-    <h1 class="article-title">How HTML, CSS, and JavaScript Work Together</h1>
+    <h1 class="article-title">Installing Node.js With NVM On Ubuntu Using Terminal</h1>
 
     
-    <span class="article-date">October 21, 2017</span>
+    <span class="article-date">October 22, 2017</span>
     
 
     <div class="article-content">
       
 
-<h2 id="html">HTML</h2>
+<h2 id="nvm">NVM</h2>
 
-<p>Hypertext Markup Language gives structure and meaning to a page.
+<p>Node Version Manager lets us install and switch between several versions of node.js.</p>
+
+<p>First we should update our packages:
 <pre class="code">
 <code>
- &lt;button&gt;This is a button in HTML.&lt;/button&gt;
-</code>
+  $ sudo apt-get update
+<code>
 </pre></p>
 
-<p>The above code will render as:
-<pre class="code">
-    <button>This is a button in HTML.</button>
-</pre></p>
+<p>Next we will install the latest version of NVM from <a href="https://github.com/creationix/nvm">this github repo</a>. As of this post the most recent NVM is v0.33.5. We can use the following command to begin installation.</p>
 
-<h2 id="css">CSS</h2>
-
-<p>Cascading Style Sheets are text documents with rules that describe how the elements in HTML documents should be displayed.
 <pre class="code">
 <code>
- button {
-   color: red;
- }
-</code>
-</pre></p>
+  $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
+<code>
+</pre>
 
-<p>Adding this line of code to our HTML file will render all text in button elements with the color red.
-<pre class="code">
-    <button style="color: red;">This is a button in HTML.</button>
-</pre></p>
-
-<h2 id="javascript">JavaScript</h2>
-
-<p>JavaScript allows users to ineract with the page by adding behavior.
+<p>Now follow the terminal instruction after the NVM install is comlete:
 <pre class="code">
 <code>
- const button = document.querySelector(&lsquo;button&rsquo;);</p>
-
-<p>const changeText = () =&gt; {
-  button.innerText = &ldquo;Hello World!&rdquo;;
- }</p>
-
-<p>button.addEventListener(&lsquo;click&rsquo;, changeText);
-</code>
+  $ Close and reopen your terminal to start using nvm
+<code>
 </pre></p>
 
-<p>This will let our button run the changeText function once it has been clicked.
+<p>Lets check if we now have NVM installed:
 <pre class="code">
-    <button class="ex-js" style="color: red;">This is a button in HTML.</button>
+<code>
+  $ nvm <code>--</code>version
+<code>
+</pre></p>
+
+<p>This should give you the version of NVM that you installed:
+<pre class="code">
+<code>
+  $ 0.33.5
+<code>
+</pre></p>
+
+<h2 id="node-js">Node.js</h2>
+
+<p>Now we can install the latest stable version of node.js:
+<pre class="code">
+<code>
+  $ nvm install stable
+<code>
+</pre></p>
+
+<p>We can check our current version of node.js:
+<pre class="code">
+<code>
+  $ node <code>--</code>version
+<code>
+</pre></p>
+
+<p>The current stable node.js version as of this post is:
+<pre class="code">
+<code>
+  $ v8.7.0
+<code>
 </pre></p>
 
     </div>
