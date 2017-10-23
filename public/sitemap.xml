@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://christianprado.com/blog/2017/10/21/how-html-css-and-javascript-work-together/</loc>
+    <lastmod>2017-10-21T20:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://christianprado.com/blog/2017/10/21/hello-/</loc>
     <lastmod>2017-10-21T18:36:58-07:00</lastmod>
   </url>
@@ -14,13 +19,13 @@
   
   <url>
     <loc>http://christianprado.com/blog/</loc>
-    <lastmod>2017-10-21T18:36:58-07:00</lastmod>
+    <lastmod>2017-10-21T20:35:11-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://christianprado.com/blog/post/</loc>
-    <lastmod>2017-10-21T18:36:58-07:00</lastmod>
+    <lastmod>2017-10-21T20:35:11-07:00</lastmod>
     <priority>0</priority>
   </url>
   

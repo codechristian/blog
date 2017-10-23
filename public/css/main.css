@@ -305,4 +305,14 @@ a {
   .footer-links {
     font-size: inherit;
   }
+
+  .code {
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  .code p {
+    padding: 0 15px;
+  }
 }

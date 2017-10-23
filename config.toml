@@ -11,14 +11,11 @@ relativeURLs = false
     page = "/:title/"
 
 [[menu.main]]
-    name = "About"
-    url = "/about/"
+    name = "Christian Prado"
+    url = "http://christianprado.com"
 [[menu.main]]
     name = "GitHub"
-    url = ""
-[[menu.main]]
-    name = "Twitter"
-    url = ""
+    url = "https://github.com/codechristian"
 
 [params]
     description = ""
