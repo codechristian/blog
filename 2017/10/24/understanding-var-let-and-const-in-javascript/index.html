@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>Understanding Var, Let, And Const In JavaScript - Lithium Theme</title>
+<meta property="og:title" content="Understanding Var, Let, And Const In JavaScript - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="http://christianprado.com/blog/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://christianprado.com/blog/" class="nav-logo">
+    <h1>Blog</h1>
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="http://christianprado.com">Christian Prado</a></li>
+    
+    <li><a href="https://github.com/codechristian">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">Understanding Var, Let, And Const In JavaScript</h1>
+
+    
+    <span class="article-date">October 24, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<h2 id="var">var</h2>
+
+<p>Declaring a variable with the <code class="code-key">var</code> keyword results in it having function scope.</p>
+
+<p>This means that we are able to use a variable with the <code class="code-key">var</code> keyword outside of the block it was declared in.</p>
+
+<p><a class="jsbin-embed" href="http://jsbin.com/pibinegasi/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+
+<p>In the above example we are able to declare a <code class="code-key">var</code> variable <code class="code-key">i</code> inside a for loop block within the function printMessage. Since we declared <code class="code-key">i</code> with the keyword <code class="code-key">var</code> we are able to use it outside of the for loop block.</p>
+
+<p>We will also get an error if we try and use our variable <code class="code-key">i</code> outside of its function scope.</p>
+
+<h2 id="let">let</h2>
+
+<p>The <code class="code-key">let</code> keyword will give our declared variables block scope. We will no longer be able to use a <code class="code-key">let</code> variable outside of its block scope without getting an error.</p>
+
+<p><a class="jsbin-embed" href="http://jsbin.com/xufuweniri/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+
+<h2 id="const">const</h2>
+
+<p>Like <code class="code-key">let</code>, declaring a variable with the <code class="code-key">const</code> keyword will restrict that variable with block scope.</p>
+
+<p><a class="jsbin-embed" href="http://jsbin.com/ceqedejise/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+
+<p>The difference is that a variable declared with the <code class="code-key">const</code> keyword cannot be reassigned.</p>
+
+<p><a class="jsbin-embed" href="http://jsbin.com/vurerasoja/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+
+<p>If you require that declared variables be able to change (e.g <code class="code-key">for</code> loops) then <code class="code-key">let</code> is the ideal keyword of choice. In any other case using <code class="code-key">const</code> whenever possible is preffered.</p>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://christianprado.com/blog/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://christianprado.com/blog/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

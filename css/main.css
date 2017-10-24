@@ -262,6 +262,10 @@ pre {
   padding: 0 15px;
 }
 
+.code-key {
+  color: rgb(59, 181, 185);
+}
+
 @media (min-width: 600px) {
   .header {
     padding: 25px 0;
@@ -328,5 +332,9 @@ pre {
   
   .code p {
     padding: 0 15px;
+  }
+
+  .code-key {
+    color: rgb(59, 181, 185);
   }
 }
