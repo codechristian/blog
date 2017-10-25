@@ -76,8 +76,8 @@
    border: 1px solid black;
    color: white;
    cursor: pointer;
-   display:flex;
-   justify-content:center;
+   display: flex;
+   justify-content: center;
    align-items: center;
  }
 
@@ -132,8 +132,8 @@ flex-direction:column;">
    border: 1px solid black;
    color: white;
    cursor: pointer;
-   display:flex;
-   justify-content:center;
+   display: flex;
+   justify-content: center;
    align-items: center;
  }
 
@@ -177,7 +177,7 @@ flex-direction:column;">
 
 <p>We can now see some spacing between box1 and box2 but there is a subtle effect that is taking place.</p>
 
-<p>Since both box1 and box2 are sibling elements the margin of their corresponding sides will collapse to only the element with the largest margin. Without this effect we should have had a total margin between boxes of 30px because we added some botton margin of 20px to box1 and some top margin of 10px to box2.</p>
+<p>Since both box1 and box2 are right next to each other the margin of their corresponding sides will collapse to only the element with the largest margin. Without this effect we should have had a total margin between boxes of 30px because we added some botton margin of 20px to box1 and some top margin of 10px to box2.</p>
 
 <p>Margin collapse is what&rsquo;s happening with our example above and we will only get 20px of margin from box1 ignoring the top margin of box2.</p>
 
@@ -185,7 +185,7 @@ flex-direction:column;">
 
 <h2 id="padding">Padding</h2>
 
-<p>Using our example above lets switch margin for padding.</p>
+<p>Using our example above lets switch margin to padding.</p>
 
 <pre class="code">
 <code>
@@ -199,8 +199,8 @@ flex-direction:column;">
    border: 1px solid black;
    color: white;
    cursor: pointer;
-   display:flex;
-   justify-content:center;
+   display: flex;
+   justify-content: center;
    align-items: center;
  }
 
@@ -245,9 +245,9 @@ box2
 
 <p>Right away we can see the difference the effect padding has on our elements.</p>
 
-<p>Padding is added within the border of our elements and this results in it taking on that elements background color. As a result we cannot really see any seperation between box1 and box2.</p>
+<p>Padding is added within the border of our elements and this lets it take on that elements background color. As a result we cannot really see any seperation between box1 and box2.</p>
 
-<p>Unlike margin, padding does aggregate corresponding element sides. In our example box1 with bottom padding of 20px and box2 with top padding of 10px show a total of 30px of extra space between them.</p>
+<p>Unlike margin, padding does aggregate between element that are right next to each other. In our example box1 with bottom padding of 20px and box2 with top padding of 10px show a total of 30px of extra space between them.</p>
 
 <p>One last consideration to using padding over margin is the available click area of an element. Hovering over our elements extra space given by padding will still allow us to interact with that element while with margin spacing we no longer have that ability.</p>
 
