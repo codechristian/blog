@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Lithium Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Oct 2017 08:14:51 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 25 Oct 2017 12:25:45 -0700</lastBuildDate>
     
 	<atom:link href="http://christianprado.com/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How To Decide Between Margin And Padding</title>
+      <link>http://christianprado.com/blog/2017/10/25/how-to-decide-between-margin-and-padding/</link>
+      <pubDate>Wed, 25 Oct 2017 12:25:45 -0700</pubDate>
+      
+      <guid>http://christianprado.com/blog/2017/10/25/how-to-decide-between-margin-and-padding/</guid>
+      <description>The margin and padding css properties are usually used to give html elements some spacing.
+Margin With margin the space is added outside of an elements border.
+ &amp;lt;!-- html code --&amp;gt; &amp;lt;div class=&#34;box box1&#34;&amp;gt;box1&amp;lt;/div&amp;gt; &amp;lt;div class=&#34;box box2&#34;&amp;gt;box2&amp;lt;/div&amp;gt; /* css code */ .box { height: 100px; width: 200px; border: 1px solid black; color: white; cursor: pointer; display:flex; justify-content:center; align-items: center; } .box1 { background-color: orange; } .box2 { background-color: green; }   Before adding margin our block elements stack right on top of each other.</description>
+    </item>
     
     <item>
       <title>Understanding Var, Let, And Const In JavaScript</title>

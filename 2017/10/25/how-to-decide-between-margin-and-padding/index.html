@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>How To Decide Between Margin And Padding - Lithium Theme</title>
+<meta property="og:title" content="How To Decide Between Margin And Padding - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="http://christianprado.com/blog/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://christianprado.com/blog/" class="nav-logo">
+    <h1>Blog</h1>
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="http://christianprado.com">Christian Prado</a></li>
+    
+    <li><a href="https://github.com/codechristian">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">3 min read</span>
+    
+
+    <h1 class="article-title">How To Decide Between Margin And Padding</h1>
+
+    
+    <span class="article-date">October 25, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<p>The margin and padding css properties are usually used to give html elements some spacing.</p>
+
+<h2 id="margin">Margin</h2>
+
+<p>With margin the space is added outside of an elements border.</p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;div class="box box1"&gt;box1&lt;/div&gt;
+ &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
+ /* css code */
+ .box {
+   height: 100px;
+   width: 200px;
+   border: 1px solid black;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+ }
+
+ .box1 {
+   background-color: orange;
+ } <br>
+ .box2 {
+   background-color: green;
+ }
+</code>
+</pre>
+
+<p>Before adding margin our block elements stack right on top of each other.</p>
+
+<div style="display: flex; align-items:center;
+flex-direction:column;">
+<div class="box1" style="height: 100px;
+   width: 200px;
+   background-color: orange;
+   border: 1px solid black;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   justify-content:center;
+   align-items: center;">
+   box1
+ </div>
+ <div class="box2" style="height: 100px;
+   width: 200px;
+   background-color: green;
+   border: 1px solid black;
+   color: white;   
+   cursor: pointer;
+   display:flex;
+   justify-content:center;
+   align-items: center;">
+   box2
+ </div>
+ </div>
+
+<p>Now lets add some margin below box1 and above box2.</p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;div class="box box1"&gt;box1&lt;/div&gt;
+ &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
+ /* css code */
+ .box {
+   height: 100px;
+   width: 200px;
+   border: 1px solid black;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+ }
+
+ .box1 {
+   background-color: orange;
+   margin-bottom: 20px; /* add some spacing below box1 */
+ } <br>
+ .box2 {
+   background-color: green;
+   margin-top: 10px; /* add some spacing above box2 ... maybe? */
+ }
+</code>
+</pre>
+
+<div style="display: flex; align-items:center;
+flex-direction:column;">
+<div class="box1" style="height: 100px;
+   width: 200px;
+   background-color: orange;
+   border: 1px solid black;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+   margin-bottom: 20px;">
+   box1
+ </div>
+ <div class="box2" style="height: 100px;
+   width: 200px;
+   background-color: green;
+   border: 1px solid black;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+   margin-top: 10px;">
+   box2
+ </div>
+</div>
+
+<p>We can now see some spacing between box1 and box2 but there is a subtle effect that is taking place.</p>
+
+<p>Since both box1 and box2 are sibling elements the margin of their corresponding sides will collapse to only the element with the largest margin. Without this effect we should have had a total margin between boxes of 30px because we added some botton margin of 20px to box1 and some top margin of 10px to box2.</p>
+
+<p>Margin collapse is what&rsquo;s happening with our example above and we will only get 20px of margin from box1 ignoring the top margin of box2.</p>
+
+<p>Another property of margin is that it is always transparent and it will not take the background color of the element it was added to.</p>
+
+<h2 id="padding">Padding</h2>
+
+<p>Using our example above lets switch margin for padding.</p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;div class="box box1"&gt;box1&lt;/div&gt;
+ &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
+ /* css code */
+ .box {
+   height: 100px;
+   width: 200px;
+   border: 1px solid black;
+   color: white;
+   cursor: pointer;
+   display:flex;
+   justify-content:center;
+   align-items: center;
+ }
+
+ .box1 {
+   background-color: orange;
+   padding-bottom: 20px; /* add some spacing below box1 */
+ } <br>
+ .box2 {
+   background-color: green;
+   padding-top: 10px; /* add some spacing above box2 ... maybe? */
+ }
+</code>
+</pre>
+
+<div style="display: flex; align-items:center;
+flex-direction:column;">
+  <div class="box1" style="height: 100px;
+width: 200px;
+background-color: orange;
+border: 1px solid black;
+color: white;
+cursor: pointer;
+display:flex;
+justify-content:center;
+align-items: center;
+padding-bottom: 20px;">
+box1
+</div>
+<div class="box2" style="height: 100px;
+width: 200px;
+background-color: green;
+border: 1px solid black;
+color: white;
+cursor: pointer;
+display:flex;
+justify-content:center;
+align-items: center;
+padding-top: 10px;">
+box2
+</div>
+</div>
+
+<p>Right away we can see the difference the effect padding has on our elements.</p>
+
+<p>Padding is added within the border of our elements and this results in it taking on that elements background color. As a result we cannot really see any seperation between box1 and box2.</p>
+
+<p>Unlike margin, padding does aggregate corresponding element sides. In our example box1 with bottom padding of 20px and box2 with top padding of 10px show a total of 30px of extra space between them.</p>
+
+<p>One last consideration to using padding over margin is the available click area of an element. Hovering over our elements extra space given by padding will still allow us to interact with that element while with margin spacing we no longer have that ability.</p>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://christianprado.com/blog/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://christianprado.com/blog/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
