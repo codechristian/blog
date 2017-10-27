@@ -35,7 +35,7 @@ Adding this line of code to our HTML file will render all text in button element
 
 ## JavaScript
 
-JavaScript allows users to ineract with the page by adding behavior.
+JavaScript allows users to interact with the page by adding behavior.
 <pre class="code">
 <code>
  const button = document.querySelector('button');
@@ -52,3 +52,14 @@ This will let our button run the changeText function once it has been clicked.
 <pre class="code">
     <button class="ex-js" style="color: red;">This is a button in HTML.</button>
 </pre>
+
+<script>
+      
+const btn = document.querySelector('.ex-js');
+
+const changeText = () => {
+  btn.innerText = 'Hello World!';
+ }
+
+ btn.addEventListener('click', changeText);
+ </script>

@@ -23,7 +23,7 @@ Next we will install the latest version of NVM from [this github repo](https://g
 <code>
 </pre>
 
-Now follow the terminal instruction after the NVM install is comlete:
+Now follow the terminal instruction after the NVM install is complete:
 <pre class="code">
 <code>
   $ Close and reopen your terminal to start using nvm
