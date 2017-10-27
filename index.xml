@@ -6,10 +6,22 @@
     <description>Recent content on Lithium Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Oct 2017 12:25:45 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 26 Oct 2017 16:47:49 -0700</lastBuildDate>
     
 	<atom:link href="http://christianprado.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Controlling Vertical Edge With Viewport Units</title>
+      <link>http://christianprado.com/blog/2017/10/26/controlling-vertical-edge-with-viewport-units/</link>
+      <pubDate>Thu, 26 Oct 2017 16:47:49 -0700</pubDate>
+      
+      <guid>http://christianprado.com/blog/2017/10/26/controlling-vertical-edge-with-viewport-units/</guid>
+      <description>Viewport units is a way to control the sizing of elements by allowing the browser to determine how wide or tall they are based on the users total area being displayed on their browser screen.
+We can use vh for viewport height and vw for viewport width wherever we would use em, rem, %, or px.
+One technique this is useful for is a split screen type of layout.
+ &amp;lt;!</description>
+    </item>
     
     <item>
       <title>How To Decide Between Margin And Padding</title>

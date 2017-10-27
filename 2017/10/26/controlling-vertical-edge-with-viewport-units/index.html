@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>Controlling Vertical Edge With Viewport Units - Lithium Theme</title>
+<meta property="og:title" content="Controlling Vertical Edge With Viewport Units - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="http://christianprado.com/blog/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://christianprado.com/blog/" class="nav-logo">
+    <h1>Blog</h1>
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="http://christianprado.com">Christian Prado</a></li>
+    
+    <li><a href="https://github.com/codechristian">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Controlling Vertical Edge With Viewport Units</h1>
+
+    
+    <span class="article-date">October 26, 2017</span>
+    
+
+    <div class="article-content">
+      <p>Viewport units is a way to control the sizing of elements by allowing the browser to determine how wide or tall they are based on the users total area being displayed on their browser screen.</p>
+
+<p>We can use vh for viewport height and vw for viewport width wherever we would use em, rem, %, or px.</p>
+
+<p>One technique this is useful for is a split screen type of layout.</p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;article&gt;
+   &lt;img src="landscape.jpg" alt="Rock Landscape"&gt; <br>
+   &lt;div class="container"&gt;
+   &lt;h1&gt;Rock Landscape&lt;/h1&gt;
+   &lt;p&gt;Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut. Fugit lobortis an mea, et laoreet admodum oporteat mel. Sed sonet indoctum id, eam nostrum cotidieque persequeris an.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/article&gt;
+
+ /* css code */
+ img {
+     float: left;
+     margin-right: 2em;
+     width: 50%;
+ }
+</code>
+</pre>
+
+<article style="clear: both;">
+   <img src="/blog/images/landscape.jpg" alt="Rock Landscape" style="float: left;
+     margin-right: 2em;
+     width: 50%;"> <br>
+   <div class="container">
+   <h1>Rock Landscape</h1>
+   <p>Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut. Fugit lobortis an mea, et laoreet admodum oporteat mel. Sed sonet indoctum id, eam nostrum cotidieque persequeris an.</p>
+   </div>
+ </article>
+
+<p style="clear: both;">
+ Without viewport units resizing our window height will not allow the entire image to appear within the users viewport.
+
+ Now lets give our image a height with some vh units instead of a width of 50%.
+ </p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;article&gt;
+   &lt;img src="landscape.jpg" alt="Rock Landscape"&gt; <br>
+   &lt;div class="container"&gt;
+   &lt;h1&gt;Rock Landscape&lt;/h1&gt;
+   &lt;p&gt;Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut. Fugit lobortis an mea, et laoreet admodum oporteat mel. Sed sonet indoctum id, eam nostrum cotidieque persequeris an.&lt;/p&gt;
+   &lt;/div&gt;
+ &lt;/article&gt;
+
+ /* css code */
+ img {
+     float: left;
+     margin-right: 2em;
+     height: 100vh;
+ }
+</code>
+</pre>
+
+<article>
+   <img src="/blog/images/landscape.jpg" alt="Rock Landscape" style="float: left;
+     margin-right: 2em;
+     height: 100vh;"> <br>
+   <div class="container">
+   <h1>Rock Landscape</h1>
+   <p>Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut. Fugit lobortis an mea, et laoreet admodum oporteat mel. Sed sonet indoctum id, eam nostrum cotidieque persequeris an.</p>
+   </div>
+ </article>
+
+<p style="clear: both;">
+Giving our image a height of 100vh means that we want the image to appear 100% of the users viewport regardless of how tall they make their browser window.
+ </p>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://christianprado.com/blog/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://christianprado.com/blog/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
