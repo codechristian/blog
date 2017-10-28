@@ -6,10 +6,21 @@
     <description>Recent content on Lithium Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Oct 2017 16:47:49 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 27 Oct 2017 17:29:15 -0700</lastBuildDate>
     
 	<atom:link href="http://christianprado.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Avoid Margin Collapse With These Techniques</title>
+      <link>http://christianprado.com/blog/2017/10/27/avoid-margin-collapse-with-these-techniques/</link>
+      <pubDate>Fri, 27 Oct 2017 17:29:15 -0700</pubDate>
+      
+      <guid>http://christianprado.com/blog/2017/10/27/avoid-margin-collapse-with-these-techniques/</guid>
+      <description>Margin collapse is the default behavior when elements are right next to each other but sometimes we want to prevent this effect.
+margin-top or margin-bottom Our first solution would be to exclusively use only margin-top or margin-bottom for spacing between elements.  &amp;lt;!-- html code --&amp;gt; &amp;lt;div class=&amp;ldquo;box box1&amp;rdquo;&amp;gt;box1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;ldquo;box box2&amp;rdquo;&amp;gt;box2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;ldquo;box box3&amp;rdquo;&amp;gt;box3&amp;lt;/div&amp;gt;
+/* css code */ .box { height: 100px; width: 200px; border: 1px solid black; color: white; display: flex; justify-content: center; align-items: center; } .</description>
+    </item>
     
     <item>
       <title>Controlling Vertical Edge With Viewport Units</title>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.30.2" />
+
+
+<title>Avoid Margin Collapse With These Techniques - Lithium Theme</title>
+<meta property="og:title" content="Avoid Margin Collapse With These Techniques - Lithium Theme">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="http://christianprado.com/blog/css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="http://christianprado.com/blog/" class="nav-logo">
+    <h1>Blog</h1>
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="http://christianprado.com">Christian Prado</a></li>
+    
+    <li><a href="https://github.com/codechristian">GitHub</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">2 min read</span>
+    
+
+    <h1 class="article-title">Avoid Margin Collapse With These Techniques</h1>
+
+    
+    <span class="article-date">October 27, 2017</span>
+    
+
+    <div class="article-content">
+      
+
+<p>Margin collapse is the default behavior when elements are right next to each other but sometimes we want to prevent this effect.</p>
+
+<h2 id="margin-top-or-margin-bottom">margin-top or margin-bottom</h2>
+
+<p>Our first solution would be to exclusively use only <code class="code-key">margin-top</code> or <code class="code-key">margin-bottom</code> for spacing between elements.
+<pre class="code">
+<code>
+ &lt;!<code>--</code> html code <code>--</code>&gt;
+ &lt;div class=&ldquo;box box1&rdquo;&gt;box1&lt;/div&gt;
+ &lt;div class=&ldquo;box box2&rdquo;&gt;box2&lt;/div&gt;
+ &lt;div class=&ldquo;box box3&rdquo;&gt;box3&lt;/div&gt;<br>
+ /* css code <code>*</code>/
+ .box {
+   height: 100px;
+   width: 200px;
+   border: 1px solid black;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ } <br>
+ .box1 {
+   background-color: orange;
+   margin-bottom: 20px; /* add some spacing below box1 */
+ } <br>
+ .box2 {
+   background-color: green;
+   margin-bottom: 10px; /<code>*</code> add some spacing below box2 */
+ } <br>
+ .box3 {
+   background-color: purple;
+ }
+</code>
+</pre></p>
+
+<div style="display: flex; align-items:center;
+flex-direction:column;">
+  <div class="box1" style="height: 100px;
+width: 200px;
+background-color: orange;
+border: 1px solid black;
+color: white;
+display:flex;
+justify-content:center;
+align-items: center;
+margin-bottom: 20px;">
+box1
+</div>
+<div class="box2" style="height: 100px;
+width: 200px;
+background-color: green;
+border: 1px solid black;
+color: white;
+display:flex;
+justify-content:center;
+align-items: center;
+margin-bottom: 10px;">
+box2
+</div>
+<div class="box3" style="height: 100px;
+width: 200px;
+background-color: purple;
+border: 1px solid black;
+color: white;
+display:flex;
+justify-content:center;
+align-items: center;">
+box3
+</div>
+</div>
+
+<p>As a result of only using <code class="code-key">margin-bottom</code> to give some spacing between our three boxes we no longer have to worry about the complexity of margin collapse.</p>
+
+<p>We get exactly 20px below box1 and 10px below box2.</p>
+
+<h2 id="substitute-margin-for-padding">Substitute margin for padding</h2>
+
+<p>This solution is usually a good one since padding does not have the effect of collapsing on elements.</p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;div class="box box1"&gt;box1&lt;/div&gt;
+ &lt;div class="box box2"&gt;box2&lt;/div&gt; 
+ &lt;div class="box box3"&gt;box3&lt;/div&gt;<br>
+ /* css code */
+ .box {
+   height: 100px;
+   width: 200px;
+   color: black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ } <br>
+ .box1 {
+   padding: 60px 0; /* add some spacing above and below box2 */
+ } <br>
+ .box2 {
+   background-color: green;
+   border: 1px solid black;
+ } <br>
+ .box3 {
+   padding: 40px 0; /* add some spacing above and below box3 */
+ }
+</code>
+</pre>
+
+<div style="width: 200px; margin: 0 auto;">
+<div class="box1" style="height: 100px;
+width: 200px;
+color: black;
+display:flex;
+justify-content:center;
+align-items: center;
+padding: 60px 0;">
+box1
+</div>
+<div class="box2" style="height: 100px;
+width: 200px;
+background-color: green;
+border: 1px solid black;
+color: black;
+display:flex;
+justify-content:center;
+align-items: center;
+">
+box2
+</div>
+<div class="box3" style="height: 100px;
+width: 200px;
+color: black;
+padding: 40px 0;
+display:flex;
+justify-content:center;
+align-items: center;">
+box3
+</div>
+</div>
+
+<p>This works great in our example above since our box1 and box3 elements are not using the space taken up by padding for things such as background color or border style.</p>
+
+<p>However once we do, padding does not work too well to space out our elements as shown below.</p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;div class="box box1"&gt;box1&lt;/div&gt;
+ &lt;div class="box box2"&gt;box2&lt;/div&gt; 
+ &lt;div class="box box3"&gt;box3&lt;/div&gt;<br>
+ /* css code */
+ .box {
+   height: 100px;
+   width: 200px;
+   color: black;
+   border: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ } <br>
+ .box1 {
+   padding: 60px 0; /* add some spacing above and below box2 */
+   background-color: orange;
+ } <br>
+ .box2 {
+   background-color: green;
+ } <br>
+ .box3 {
+   padding: 40px 0; /* add some spacing above and below box3 */
+   background-color: purple;
+ }
+</code>
+</pre>
+
+<div style="width: 200px; margin: 0 auto;">
+<div class="box1" style="height: 100px;
+width: 200px;
+color: black;
+border: 1px solid black;
+background-color: orange;
+display:flex;
+justify-content:center;
+align-items: center;
+padding: 60px 0;">
+box1
+</div>
+<div class="box2" style="height: 100px;
+width: 200px;
+background-color: green;
+border: 1px solid black;
+color: black;
+display:flex;
+justify-content:center;
+align-items: center;
+">
+box2
+</div>
+<div class="box3" style="height: 100px;
+width: 200px;
+color: black;
+border: 1px solid black;
+background-color:purple;
+padding: 40px 0;
+display:flex;
+justify-content:center;
+align-items: center;">
+box3
+</div>
+</div>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="http://christianprado.com/blog/index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="http://christianprado.com/blog/images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+

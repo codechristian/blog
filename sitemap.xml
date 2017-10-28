@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://christianprado.com/blog/2017/10/27/avoid-margin-collapse-with-these-techniques/</loc>
+    <lastmod>2017-10-27T17:29:15-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://christianprado.com/blog/2017/10/26/controlling-vertical-edge-with-viewport-units/</loc>
     <lastmod>2017-10-26T16:47:49-07:00</lastmod>
   </url>
@@ -44,13 +49,13 @@
   
   <url>
     <loc>http://christianprado.com/blog/</loc>
-    <lastmod>2017-10-26T16:47:49-07:00</lastmod>
+    <lastmod>2017-10-27T17:29:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://christianprado.com/blog/post/</loc>
-    <lastmod>2017-10-26T16:47:49-07:00</lastmod>
+    <lastmod>2017-10-27T17:29:15-07:00</lastmod>
     <priority>0</priority>
   </url>
   
