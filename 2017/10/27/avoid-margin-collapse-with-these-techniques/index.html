@@ -46,7 +46,7 @@
 
   <article class="article">
     
-    <span class="article-duration">2 min read</span>
+    <span class="article-duration">3 min read</span>
     
 
     <h1 class="article-title">Avoid Margin Collapse With These Techniques</h1>
@@ -266,6 +266,92 @@ align-items: center;">
 box3
 </div>
 </div>
+
+<h2 id="empty-elements">Empty elements</h2>
+
+<p>In this last technique we can create an empty element in our html and give it some some small amount of height in css.</p>
+
+<p>We would then insert this empty element anyplace we want to prevent margin collapse.</p>
+
+<pre class="code">
+<code>
+ &lt;!-- html code --&gt;
+ &lt;div class="box box1"&gt;box1&lt;/div&gt;
+ &lt;div class="el-empty"&gt;&lt;/div&gt;
+ &lt;div class="box box2"&gt;box2&lt;/div&gt; 
+ &lt;div class="el-empty"&gt;&lt;/div&gt;
+ &lt;div class="box box3"&gt;box3&lt;/div&gt;<br>
+ /* css code */
+ .box {
+   height: 100px;
+   width: 200px;
+   border: 1px solid black;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ } <br>
+ .box1 {
+   background-color: orange;
+   margin-bottom: 60px; /* add some spacing below box1 */
+ } <br>
+ .box2 {
+   background-color: green;
+   margin: 20px 0; /* add some spacing above and below box2 */
+ } <br>
+ .box3 {
+   background-color: purple;
+   margin-top: 40px; /* add some spacing above box3 */
+ }
+
+ .el-empty {
+   height: 1px; /* give our empty div element some height */
+ }
+</code>
+</pre>
+
+<div style="width: 200px; margin: 0 auto;">
+<div class="box1" style="height: 100px;
+width: 200px;
+color: white;
+border: 1px solid black;
+background-color: orange;
+display:flex;
+justify-content:center;
+align-items: center;
+margin-bottom: 60px;">
+box1
+</div>
+<div class="el-empty" style="height: 1px;"></div>
+<div class="box2" style="height: 100px;
+width: 200px;
+background-color: green;
+border: 1px solid black;
+color: white;
+margin: 20px 0;
+display:flex;
+justify-content:center;
+align-items: center;
+">
+box2
+</div>
+<div class="el-empty" style="height: 1px;"></div>
+<div class="box3" style="height: 100px;
+width: 200px;
+color: white;
+border: 1px solid black;
+background-color:purple;
+margin-top: 40px;
+display:flex;
+justify-content:center;
+align-items: center;">
+box3
+</div>
+</div>
+
+<p>Margin collapse between our elements is prevented with this method because it only takes effect for consecutive elements. Our inserted empty element causes seperation and takes on the margin from its surrounding elements.</p>
+
+<p>In our example we mixed <code class="code-key">margin-bottom</code>, <code class="code-key">margin-top</code>, and just plain <code class="code-key">margin</code> in our css code and the result is what is usually desired. We can see that box2 has top and bottom margin of 20px and it does not dissapear even though box1 has bottom margin of 60px while box3 has top margin of 40px.</p>
 
     </div>
   </article>
