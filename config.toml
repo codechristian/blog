@@ -1,6 +1,6 @@
 baseurl = "http://christianprado.com/blog/"
 languageCode = "en-us"
-title = "Lithium Theme"
+title = "Blog"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
@@ -12,7 +12,7 @@ relativeURLs = false
 
 [[menu.main]]
     name = "Christian Prado"
-    url = "http://christianprado.com"
+    url = "https://christianprado.com"
 [[menu.main]]
     name = "GitHub"
     url = "https://github.com/codechristian"
