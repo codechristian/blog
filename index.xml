@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog</title>
-    <link>http://christianprado.com/blog/</link>
+    <link>https://christianprado.com/blog/</link>
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 27 Oct 2017 17:29:15 -0700</lastBuildDate>
     
-	<atom:link href="http://christianprado.com/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://christianprado.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Avoid Margin Collapse With These Techniques</title>
-      <link>http://christianprado.com/blog/2017/10/27/avoid-margin-collapse-with-these-techniques/</link>
+      <link>https://christianprado.com/blog/2017/10/27/avoid-margin-collapse-with-these-techniques/</link>
       <pubDate>Fri, 27 Oct 2017 17:29:15 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/27/avoid-margin-collapse-with-these-techniques/</guid>
+      <guid>https://christianprado.com/blog/2017/10/27/avoid-margin-collapse-with-these-techniques/</guid>
       <description>Margin collapse is the default behavior when elements are right next to each other but sometimes we want to prevent this effect.
 margin-top or margin-bottom Our first solution would be to exclusively use only margin-top or margin-bottom for spacing between elements.  &amp;lt;!-- html code --&amp;gt; &amp;lt;div class=&amp;ldquo;box box1&amp;rdquo;&amp;gt;box1&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;ldquo;box box2&amp;rdquo;&amp;gt;box2&amp;lt;/div&amp;gt; &amp;lt;div class=&amp;ldquo;box box3&amp;rdquo;&amp;gt;box3&amp;lt;/div&amp;gt;
 /* css code */ .box { height: 100px; width: 200px; border: 1px solid black; color: white; display: flex; justify-content: center; align-items: center; } .</description>
@@ -24,10 +24,10 @@ margin-top or margin-bottom Our first solution would be to exclusively use only 
     
     <item>
       <title>Controlling Vertical Edge With Viewport Units</title>
-      <link>http://christianprado.com/blog/2017/10/26/controlling-vertical-edge-with-viewport-units/</link>
+      <link>https://christianprado.com/blog/2017/10/26/controlling-vertical-edge-with-viewport-units/</link>
       <pubDate>Thu, 26 Oct 2017 16:47:49 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/26/controlling-vertical-edge-with-viewport-units/</guid>
+      <guid>https://christianprado.com/blog/2017/10/26/controlling-vertical-edge-with-viewport-units/</guid>
       <description>Viewport units is a way to control the sizing of elements by allowing the browser to determine how wide or tall they are based on the users total area being displayed on their browser screen.
 We can use vh for viewport height and vw for viewport width wherever we would use em, rem, %, or px.
 One technique this is useful for is a split screen type of layout.
@@ -36,10 +36,10 @@ One technique this is useful for is a split screen type of layout.
     
     <item>
       <title>How To Decide Between Margin And Padding</title>
-      <link>http://christianprado.com/blog/2017/10/25/how-to-decide-between-margin-and-padding/</link>
+      <link>https://christianprado.com/blog/2017/10/25/how-to-decide-between-margin-and-padding/</link>
       <pubDate>Wed, 25 Oct 2017 12:25:45 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/25/how-to-decide-between-margin-and-padding/</guid>
+      <guid>https://christianprado.com/blog/2017/10/25/how-to-decide-between-margin-and-padding/</guid>
       <description>The margin and padding css properties are usually used to give html elements some spacing.
 Margin With margin the space is added outside of an elements border.
  &amp;lt;!-- html code --&amp;gt; &amp;lt;div class=&#34;box box1&#34;&amp;gt;box1&amp;lt;/div&amp;gt; &amp;lt;div class=&#34;box box2&#34;&amp;gt;box2&amp;lt;/div&amp;gt; /* css code */ .box { height: 100px; width: 200px; border: 1px solid black; color: white; cursor: pointer; display: flex; justify-content: center; align-items: center; } .box1 { background-color: orange; } .box2 { background-color: green; }   Before adding margin our block elements stack right on top of each other.</description>
@@ -47,10 +47,10 @@ Margin With margin the space is added outside of an elements border.
     
     <item>
       <title>Understanding Var, Let, And Const In JavaScript</title>
-      <link>http://christianprado.com/blog/2017/10/24/understanding-var-let-and-const-in-javascript/</link>
+      <link>https://christianprado.com/blog/2017/10/24/understanding-var-let-and-const-in-javascript/</link>
       <pubDate>Tue, 24 Oct 2017 08:14:51 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/24/understanding-var-let-and-const-in-javascript/</guid>
+      <guid>https://christianprado.com/blog/2017/10/24/understanding-var-let-and-const-in-javascript/</guid>
       <description>var Declaring a variable with the var keyword results in it having function scope.
 This means that we are able to use a variable with the var keyword outside of the block it was declared in.
 JS Bin on jsbin.com
@@ -59,20 +59,20 @@ In the above example we are able to declare a var variable i inside a for loop b
     
     <item>
       <title>CSS Shapes: Ellipse</title>
-      <link>http://christianprado.com/blog/2017/10/23/css-shapes-ellipse/</link>
+      <link>https://christianprado.com/blog/2017/10/23/css-shapes-ellipse/</link>
       <pubDate>Mon, 23 Oct 2017 11:31:18 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/23/css-shapes-ellipse/</guid>
+      <guid>https://christianprado.com/blog/2017/10/23/css-shapes-ellipse/</guid>
       <description>CSS Shapes CSS shapes allow floated images to have text flow around it based on the shape of the image.
 First lets start with some simple HTML:  &amp;lt;h1&amp;gt;Duckrs The Duck&amp;lt;/h1&amp;gt; &amp;lt;img src=&amp;ldquo;duck.jpg&amp;rdquo; alt=&amp;ldquo;Duckrs The Duck&amp;rdquo;&amp;gt; &amp;lt;p&amp;gt;Phasellus ipsum libero, feugiat nec ex vel, sollicitudin laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed mauris sapien. Sed ac sagittis odio. Nullam facilisis at urna nec semper.</description>
     </item>
     
     <item>
       <title>Installing Node.js With NVM On Ubuntu Using Terminal</title>
-      <link>http://christianprado.com/blog/2017/10/22/installing-node.js-with-nvm-on-ubuntu-using-terminal/</link>
+      <link>https://christianprado.com/blog/2017/10/22/installing-node.js-with-nvm-on-ubuntu-using-terminal/</link>
       <pubDate>Sun, 22 Oct 2017 22:38:55 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/22/installing-node.js-with-nvm-on-ubuntu-using-terminal/</guid>
+      <guid>https://christianprado.com/blog/2017/10/22/installing-node.js-with-nvm-on-ubuntu-using-terminal/</guid>
       <description>NVM Node Version Manager lets us install and switch between several versions of node.js.
 First we should update our packages:  $ sudo apt-get update  
 Next we will install the latest version of NVM from this github repo. As of this post the most recent NVM is v0.33.5. We can use the following command to begin installation.
@@ -81,10 +81,10 @@ Next we will install the latest version of NVM from this github repo. As of this
     
     <item>
       <title>How HTML, CSS, and JavaScript Work Together</title>
-      <link>http://christianprado.com/blog/2017/10/21/how-html-css-and-javascript-work-together/</link>
+      <link>https://christianprado.com/blog/2017/10/21/how-html-css-and-javascript-work-together/</link>
       <pubDate>Sat, 21 Oct 2017 20:35:11 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/21/how-html-css-and-javascript-work-together/</guid>
+      <guid>https://christianprado.com/blog/2017/10/21/how-html-css-and-javascript-work-together/</guid>
       <description>HTML Hypertext Markup Language gives structure and meaning to a page.  &amp;lt;button&amp;gt;This is a button in HTML.&amp;lt;/button&amp;gt;  
 The above code will render as: This is a button in HTML. 
 CSS Cascading Style Sheets are text documents with rules that describe how the elements in HTML documents should be displayed.  button { color: red; }  
@@ -93,10 +93,10 @@ Adding this line of code to our HTML file will render all text in button element
     
     <item>
       <title>Hello :) </title>
-      <link>http://christianprado.com/blog/2017/10/21/hello-/</link>
+      <link>https://christianprado.com/blog/2017/10/21/hello-/</link>
       <pubDate>Sat, 21 Oct 2017 18:36:58 -0700</pubDate>
       
-      <guid>http://christianprado.com/blog/2017/10/21/hello-/</guid>
+      <guid>https://christianprado.com/blog/2017/10/21/hello-/</guid>
       <description>Hi this is my first post :)</description>
     </item>
     
