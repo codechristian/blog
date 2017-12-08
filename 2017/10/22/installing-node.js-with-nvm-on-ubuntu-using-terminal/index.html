@@ -62,64 +62,39 @@
 
 <p>Node Version Manager lets us install and switch between several versions of node.js.</p>
 
-<p>First we should update our packages:
-<pre class="code">
-<code>
-  $ sudo apt-get update
-<code>
-</pre></p>
+<p>First we should update our packages:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo apt-get update</code></pre></div>
 
 <p>Next we will install the latest version of NVM from <a href="https://github.com/creationix/nvm">this github repo</a>. As of this post the most recent NVM is v0.33.5. We can use the following command to begin installation.</p>
 
-<pre class="code">
-<code>
-  $ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash
-<code>
-</pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.5/install.sh | bash</code></pre></div>
 
-<p>Now follow the terminal instruction after the NVM install is complete:
-<pre class="code">
-<code>
-  $ Close and reopen your terminal to start using nvm
-<code>
-</pre></p>
+<p>Now follow the terminal instruction after the NVM install is complete:</p>
 
-<p>Lets check if we now have NVM installed:
-<pre class="code">
-<code>
-  $ nvm <code>--</code>version
-<code>
-</pre></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ Close and reopen your terminal to start using nvm</code></pre></div>
 
-<p>This should give you the version of NVM that you installed:
-<pre class="code">
-<code>
-  $ 0.33.5
-<code>
-</pre></p>
+<p>Lets check if we now have NVM installed:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ nvm --version</code></pre></div>
+
+<p>This should give you the version of NVM that you installed:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ <span style="color:#ae81ff">0</span>.33.5</code></pre></div>
 
 <h2 id="node-js">Node.js</h2>
 
-<p>Now we can install the latest stable version of node.js:
-<pre class="code">
-<code>
-  $ nvm install stable
-<code>
-</pre></p>
+<p>Now we can install the latest stable version of node.js:</p>
 
-<p>We can check our current version of node.js:
-<pre class="code">
-<code>
-  $ node <code>--</code>version
-<code>
-</pre></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ nvm install stable</code></pre></div>
 
-<p>The current stable node.js version as of this post is:
-<pre class="code">
-<code>
-  $ v8.7.0
-<code>
-</pre></p>
+<p>We can check our current version of node.js:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ node --version</code></pre></div>
+
+<p>The current stable node.js version as of this post is:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ v8.7.0</code></pre></div>
 
     </div>
   </article>

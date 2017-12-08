@@ -64,31 +64,29 @@
 
 <p>With margin the space is added outside of an elements border.</p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box1&#34;</span>&gt;box1&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box2&#34;</span>&gt;box2&lt;/<span style="color:#f92672">div</span>&gt; </code></pre></div>
 
- .box1 {
-   background-color: orange;
- } <br>
- .box2 {
-   background-color: green;
- }
-</code>
-</pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+.<span style="color:#a6e22e">box</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+  <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+}
+
+.<span style="color:#a6e22e">box1</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">orange</span>;
+} 
+
+.<span style="color:#a6e22e">box2</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+}</code></pre></div>
 
 <p>Before adding margin our block elements stack right on top of each other.</p>
 
@@ -120,33 +118,31 @@ flex-direction:column;">
 
 <p>Now lets add some margin below box1 and above box2.</p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box1&#34;</span>&gt;box1&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box2&#34;</span>&gt;box2&lt;/<span style="color:#f92672">div</span>&gt; </code></pre></div>
 
- .box1 {
-   background-color: orange;
-   margin-bottom: 20px; /* add some spacing below box1 */
- } <br>
- .box2 {
-   background-color: green;
-   margin-top: 10px; /* add some spacing above box2 ... maybe? */
- }
-</code>
-</pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+.<span style="color:#a6e22e">box</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+  <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+}
+
+.<span style="color:#a6e22e">box1</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">orange</span>;
+  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing below box1 */</span>
+} 
+
+.<span style="color:#a6e22e">box2</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+  <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing above box2 ... maybe? */</span>
+ }</code></pre></div>
 
 <div style="width: 200px; margin: 0 auto;">
 <div class="box1" style="height: 100px;
@@ -187,33 +183,31 @@ flex-direction:column;">
 
 <p>Using our example above lets switch margin to padding.</p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box1&#34;</span>&gt;box1&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box2&#34;</span>&gt;box2&lt;/<span style="color:#f92672">div</span>&gt; </code></pre></div>
 
- .box1 {
-   background-color: orange;
-   padding-bottom: 20px; /* add some spacing below box1 */
- } <br>
- .box2 {
-   background-color: green;
-   padding-top: 10px; /* add some spacing above box2 ... maybe? */
- }
-</code>
-</pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+.<span style="color:#a6e22e">box</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+  <span style="color:#66d9ef">cursor</span>: <span style="color:#66d9ef">pointer</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+}
+
+.<span style="color:#a6e22e">box1</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">orange</span>;
+  <span style="color:#66d9ef">padding-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing below box1 */</span>
+} 
+
+.<span style="color:#a6e22e">box2</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+  <span style="color:#66d9ef">padding-top</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing above box2 … maybe? */</span>
+}</code></pre></div>
 
 <div style="display: flex; align-items:center;
 flex-direction:column;">

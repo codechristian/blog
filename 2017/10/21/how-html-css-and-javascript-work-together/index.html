@@ -60,12 +60,9 @@
 
 <h2 id="html">HTML</h2>
 
-<p>Hypertext Markup Language gives structure and meaning to a page.
-<pre class="code">
-<code>
- &lt;button&gt;This is a button in HTML.&lt;/button&gt;
-</code>
-</pre></p>
+<p>Hypertext Markup Language gives structure and meaning to a page.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">button</span>&gt;This is a button in HTML.&lt;/<span style="color:#f92672">button</span>&gt;</code></pre></div>
 
 <p>The above code will render as:
 <pre class="code">
@@ -74,14 +71,11 @@
 
 <h2 id="css">CSS</h2>
 
-<p>Cascading Style Sheets are text documents with rules that describe how the elements in HTML documents should be displayed.
-<pre class="code">
-<code>
- button {
-   color: red;
- }
-</code>
-</pre></p>
+<p>Cascading Style Sheets are text documents with rules that describe how the elements in HTML documents should be displayed.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#f92672">button</span> {
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">red</span>;
+}</code></pre></div>
 
 <p>Adding this line of code to our HTML file will render all text in button elements with the color red.
 <pre class="code">
@@ -90,18 +84,15 @@
 
 <h2 id="javascript">JavaScript</h2>
 
-<p>JavaScript allows users to interact with the page by adding behavior.
-<pre class="code">
-<code>
- const button = document.querySelector(&lsquo;button&rsquo;);</p>
+<p>JavaScript allows users to interact with the page by adding behavior.</p>
 
-<p>const changeText = () =&gt; {
-  button.innerText = &ldquo;Hello World!&rdquo;;
- }</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">button</span> <span style="color:#f92672">=</span> document.<span style="color:#a6e22e">querySelector</span>(<span style="color:#e6db74">&#39;button&#39;</span>);
 
-<p>button.addEventListener(&lsquo;click&rsquo;, changeText);
-</code>
-</pre></p>
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">changeText</span> <span style="color:#f92672">=</span> () =&gt; {
+  <span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">innerText</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hello World!&#39;</span>;
+}
+
+<span style="color:#a6e22e">button</span>.<span style="color:#a6e22e">addEventListener</span>(<span style="color:#e6db74">&#39;click&#39;</span>, <span style="color:#a6e22e">changeText</span>);</code></pre></div>
 
 <p>This will let our button run the changeText function once it has been clicked.
 <pre class="code">

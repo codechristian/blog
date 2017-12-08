@@ -62,25 +62,22 @@
 
 <p>One technique this is useful for is a split screen type of layout.</p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;article&gt;
-   &lt;img src="landscape.jpg" alt="Rock Landscape"&gt; <br>
-   &lt;div class="container"&gt;
-   &lt;h1&gt;Rock Landscape&lt;/h1&gt;
-   &lt;p&gt;Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut.&lt;/p&gt;
-   &lt;/div&gt;
- &lt;/article&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">article</span>&gt;
+  &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;landscape.jpg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rock Landscape&#34;</span>&gt; 
 
- /* css code */
- img {
-     float: left;
-     margin-right: 2em;
-     width: 50%;
- }
-</code>
-</pre>
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+  &lt;<span style="color:#f92672">h1</span>&gt;Rock Landscape&lt;/<span style="color:#f92672">h1</span>&gt;
+  &lt;<span style="color:#f92672">p</span>&gt;Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut.&lt;/<span style="color:#f92672">p</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">article</span>&gt;</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+<span style="color:#f92672">img</span> {
+  <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+  <span style="color:#66d9ef">margin-right</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">em</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
 
 <article style="clear: both;">
    <img src="/blog/images/landscape.jpg" alt="Rock Landscape" style="float: left;
@@ -98,25 +95,22 @@
  Now lets give our image a height with some vh units instead of a width of 50%.
  </p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;article&gt;
-   &lt;img src="landscape.jpg" alt="Rock Landscape"&gt; <br>
-   &lt;div class="container"&gt;
-   &lt;h1&gt;Rock Landscape&lt;/h1&gt;
-   &lt;p&gt;Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut.&lt;/p&gt;
-   &lt;/div&gt;
- &lt;/article&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">article</span>&gt;
+  &lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;landscape.jpg&#34;</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Rock Landscape&#34;</span>&gt; 
 
- /* css code */
- img {
-     float: left;
-     margin-right: 2em;
-     height: 100vh;
- }
-</code>
-</pre>
+  &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container&#34;</span>&gt;
+  &lt;<span style="color:#f92672">h1</span>&gt;Rock Landscape&lt;/<span style="color:#f92672">h1</span>&gt;
+  &lt;<span style="color:#f92672">p</span>&gt;Ne voluptua conclusionemque usu. His an prima ridens, ea ius iuvaret laoreet, ius eleifend repudiandae ut.&lt;/<span style="color:#f92672">p</span>&gt;
+  &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">article</span>&gt;</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+<span style="color:#f92672">img</span> {
+  <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">vh</span>;
+  <span style="color:#66d9ef">margin-right</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">em</span>;
+}</code></pre></div>
 
 <article>
    <img src="/blog/images/landscape.jpg" alt="Rock Landscape" style="float: left;

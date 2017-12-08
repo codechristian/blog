@@ -62,36 +62,37 @@
 
 <h2 id="margin-top-or-margin-bottom">margin-top or margin-bottom</h2>
 
-<p>Our first solution would be to exclusively use only <code class="code-key">margin-top</code> or <code class="code-key">margin-bottom</code> for spacing between elements.
-<pre class="code">
-<code>
- &lt;!<code>--</code> html code <code>--</code>&gt;
- &lt;div class=&ldquo;box box1&rdquo;&gt;box1&lt;/div&gt;
- &lt;div class=&ldquo;box box2&rdquo;&gt;box2&lt;/div&gt;
- &lt;div class=&ldquo;box box3&rdquo;&gt;box3&lt;/div&gt;<br>
- /* css code <code>*</code>/
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- } <br>
- .box1 {
-   background-color: orange;
-   margin-bottom: 20px; /* add some spacing below box1 */
- } <br>
- .box2 {
-   background-color: green;
-   margin-bottom: 10px; /<code>*</code> add some spacing below box2 */
- } <br>
- .box3 {
-   background-color: purple;
- }
-</code>
-</pre></p>
+<p>Our first solution would be to exclusively use only <code class="code-key">margin-top</code> or <code class="code-key">margin-bottom</code> for spacing between elements.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box1&#34;</span>&gt;box1&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box2&#34;</span>&gt;box2&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box3&#34;</span>&gt;box3&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+.<span style="color:#a6e22e">box</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+} 
+
+.<span style="color:#a6e22e">box1</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">orange</span>;
+  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing below box1 */</span>
+} 
+
+.<span style="color:#a6e22e">box2</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">10</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing below box2 */</span>
+} 
+
+.<span style="color:#a6e22e">box3</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">purple</span>;
+}</code></pre></div>
 
 <div style="display: flex; align-items:center;
 flex-direction:column;">
@@ -137,34 +138,34 @@ box3
 
 <p>This solution is usually a good one since padding does not have the effect of collapsing on elements.</p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; 
- &lt;div class="box box3"&gt;box3&lt;/div&gt;<br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   color: black;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- } <br>
- .box1 {
-   padding: 60px 0; /* add some spacing above and below box2 */
- } <br>
- .box2 {
-   background-color: green;
-   border: 1px solid black;
-   color: white;
- } <br>
- .box3 {
-   padding: 40px 0; /* add some spacing above and below box3 */
- }
-</code>
-</pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box1&#34;</span>&gt;box1&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box2&#34;</span>&gt;box2&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box3&#34;</span>&gt;box3&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+.<span style="color:#a6e22e">box</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+} 
+
+.<span style="color:#a6e22e">box1</span> {
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">/* add some spacing above and below box2 */</span>
+} 
+
+.<span style="color:#a6e22e">box2</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+} 
+
+.<span style="color:#a6e22e">box3</span> {
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">/* add some spacing above and below box3 */</span>
+}</code></pre></div>
 
 <div style="width: 200px; margin: 0 auto;">
 <div class="box1" style="height: 100px;
@@ -202,35 +203,35 @@ box3
 
 <p>However once we do, padding does not work well to space out our elements as shown below.</p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; 
- &lt;div class="box box3"&gt;box3&lt;/div&gt;<br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   color: white;
-   border: 1px solid black;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- } <br>
- .box1 {
-   padding: 60px 0; /* add some spacing above and below box2 */
-   background-color: orange;
- } <br>
- .box2 {
-   background-color: green;
- } <br>
- .box3 {
-   padding: 40px 0; /* add some spacing above and below box3 */
-   background-color: purple;
- }
-</code>
-</pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box1&#34;</span>&gt;box1&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box2&#34;</span>&gt;box2&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box3&#34;</span>&gt;box3&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+.<span style="color:#a6e22e">box</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+} 
+
+.<span style="color:#a6e22e">box1</span> {
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">/* add some spacing above and below box2 */</span>
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">orange</span>;
+} 
+
+.<span style="color:#a6e22e">box2</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+} 
+
+.<span style="color:#a6e22e">box3</span> {
+  <span style="color:#66d9ef">padding</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">/* add some spacing above and below box3 */</span>
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">purple</span>;
+}</code></pre></div>
 
 <div style="width: 200px; margin: 0 auto;">
 <div class="box1" style="height: 100px;
@@ -274,42 +275,42 @@ box3
 
 <p>We would then insert this empty element anyplace we want to prevent margin collapse.</p>
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="el-empty"&gt;&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; 
- &lt;div class="el-empty"&gt;&lt;/div&gt;
- &lt;div class="box box3"&gt;box3&lt;/div&gt;<br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- } <br>
- .box1 {
-   background-color: orange;
-   margin-bottom: 60px; /* add some spacing below box1 */
- } <br>
- .box2 {
-   background-color: green;
-   margin: 20px 0; /* add some spacing above and below box2 */
- } <br>
- .box3 {
-   background-color: purple;
-   margin-top: 40px; /* add some spacing above box3 */
- }
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box1&#34;</span>&gt;box1&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">“el-empty”</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box2&#34;</span>&gt;box2&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">“el-empty”</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">class</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;box box3&#34;</span>&gt;box3&lt;/<span style="color:#f92672">div</span>&gt;</code></pre></div>
 
- .el-empty {
-   height: 1px; /* give our empty div element some height */
- }
-</code>
-</pre>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+.<span style="color:#a6e22e">box</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">100</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">width</span>: <span style="color:#ae81ff">200</span><span style="color:#66d9ef">px</span>;
+  <span style="color:#66d9ef">border</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span> <span style="color:#66d9ef">solid</span> <span style="color:#66d9ef">black</span>;
+  <span style="color:#66d9ef">color</span>: <span style="color:#66d9ef">white</span>;
+  <span style="color:#66d9ef">display</span>: <span style="color:#66d9ef">flex</span>;
+  <span style="color:#66d9ef">justify-content</span>: <span style="color:#66d9ef">center</span>;
+  <span style="color:#66d9ef">align-items</span>: <span style="color:#66d9ef">center</span>;
+} 
+
+.<span style="color:#a6e22e">box1</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">orange</span>;
+  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">60</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing below box1 */</span>
+} 
+
+.<span style="color:#a6e22e">box2</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">green</span>;
+  <span style="color:#66d9ef">margin</span>: <span style="color:#ae81ff">20</span><span style="color:#66d9ef">px</span> <span style="color:#ae81ff">0</span>; <span style="color:#75715e">/* add some spacing above and below box2 */</span>
+} 
+
+.<span style="color:#a6e22e">box3</span> {
+  <span style="color:#66d9ef">background-color</span>: <span style="color:#66d9ef">purple</span>;
+  <span style="color:#66d9ef">margin-top</span>: <span style="color:#ae81ff">40</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* add some spacing above box3 */</span>
+}
+
+.<span style="color:#a6e22e">el-empty</span> {
+  <span style="color:#66d9ef">height</span>: <span style="color:#ae81ff">1</span><span style="color:#66d9ef">px</span>; <span style="color:#75715e">/* give our empty div element some height */</span>
+}</code></pre></div>
 
 <div style="width: 200px; margin: 0 auto;">
 <div class="box1" style="height: 100px;

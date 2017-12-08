@@ -62,26 +62,20 @@
 
 <p>CSS shapes allow floated images to have text flow around it based on the shape of the image.</p>
 
-<p>First lets start with some simple HTML:
-<pre class="code">
-<code>
- &lt;h1&gt;Duckrs The Duck&lt;/h1&gt;
- &lt;img src=&ldquo;duck.jpg&rdquo; alt=&ldquo;Duckrs The Duck&rdquo;&gt;
- &lt;p&gt;Phasellus ipsum libero, feugiat nec ex vel, sollicitudin laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed mauris sapien. Sed ac sagittis odio. Nullam facilisis at urna nec semper. Integer pulvinar semper erat, eu blandit magna dapibus sollicitudin. Proin nec iaculis risus. Ut tristique eros sapien.&lt;/p&gt;
-</code>
-</pre></p>
+<p>First lets start with some simple HTML:</p>
 
-<p>Here&rsquo;s what the flow of text would look like without CSS shapes:
-<pre class="code">
-<code>
- img {
-     float: left;
-     margin-right: 2em;
-     margin-bottom: 0.5em;
-     border-radius: 50%;
- }
-</code>
-</pre></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!-- html code --&gt;</span>
+&lt;<span style="color:#f92672">h1</span>&gt;Duckrs The Duck&lt;/<span style="color:#f92672">h1</span>&gt;
+&lt;<span style="color:#f92672">img</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">“duck.jpg”</span> <span style="color:#a6e22e">alt</span><span style="color:#f92672">=</span><span style="color:#e6db74">“Duckrs</span> <span style="color:#a6e22e">The</span> <span style="color:#a6e22e">Duck</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;
+&lt;<span style="color:#f92672">p</span>&gt;Phasellus ipsum libero, feugiat nec ex vel, sollicitudin laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed mauris sapien. Sed ac sagittis odio. Nullam facilisis at urna nec semper. Integer pulvinar semper erat, eu blandit magna dapibus sollicitudin. Proin nec iaculis risus. Ut tristique eros sapien.&lt;/<span style="color:#f92672">p</span>&gt;</code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+<span style="color:#f92672">img</span> {
+  <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+  <span style="color:#66d9ef">margin-right</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">em</span>;
+  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">em</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+}</code></pre></div>
 
 <h3 id="duckrs-the-duck">Duckrs The Duck</h3>
 
@@ -92,18 +86,16 @@
 
 <p>Phasellus ipsum libero, feugiat nec ex vel, sollicitudin laoreet justo. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sed mauris sapien. Sed ac sagittis odio. Nullam facilisis at urna nec semper. Integer pulvinar semper erat, eu blandit magna dapibus sollicitudin. Proin nec iaculis risus. Ut tristique eros sapien.</p>
 
-<p>With CSS shapes we can manipulate how the text flows around the image. Here we are using the ellipse value for the shape-outside property :
-<pre class="code">
-<code>
- img {
-     float: left;
-     margin-right: 2em;
-     margin-bottom: 0.5em;
-     border-radius: 50%;
-     shape-outside: ellipse(45% 45%);
- }
-</code>
-</pre></p>
+<p>With CSS shapes we can manipulate how the text flows around the image. Here we are using the ellipse value for the shape-outside property :</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-css" data-lang="css"><span style="color:#75715e">/* css code */</span>
+<span style="color:#f92672">img</span> {
+  <span style="color:#66d9ef">float</span>: <span style="color:#66d9ef">left</span>;
+  <span style="color:#66d9ef">margin-right</span>: <span style="color:#ae81ff">2</span><span style="color:#66d9ef">em</span>;
+  <span style="color:#66d9ef">margin-bottom</span>: <span style="color:#ae81ff">0.5</span><span style="color:#66d9ef">em</span>;
+  <span style="color:#66d9ef">border-radius</span>: <span style="color:#ae81ff">50</span><span style="color:#66d9ef">%</span>;
+  <span style="color:#66d9ef">shape-outside</span>: ellipse(<span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span> <span style="color:#ae81ff">45</span><span style="color:#66d9ef">%</span>);
+}</code></pre></div>
 
 <h3 id="duckrs-the-duck-1">Duckrs The Duck</h3>
 

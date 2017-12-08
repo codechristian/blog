@@ -46,7 +46,7 @@
 
   <article class="article">
     
-    <span class="article-duration">1 min read</span>
+    <span class="article-duration">3 min read</span>
     
 
     <h1 class="article-title">Understanding Var, Let, And Const In JavaScript</h1>
@@ -64,7 +64,25 @@
 
 <p>This means that we are able to use a variable with the <code class="code-key">var</code> keyword outside of the block it was declared in.</p>
 
-<p><a class="jsbin-embed" href="http://jsbin.com/pibinegasi/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//start of printMessage function scope
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">printMessage</span>(<span style="color:#a6e22e">message</span>, <span style="color:#a6e22e">times</span>) {
+  
+ <span style="color:#75715e">//start of for loop block scope
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">times</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) { 
+   
+ <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">message</span>);
+   
+ }<span style="color:#75715e">//end of for loop block scope.
+</span><span style="color:#75715e"></span>  
+ <span style="color:#75715e">//i variable used outside of for loop block it was declared in
+</span><span style="color:#75715e"></span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Value of i is &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>); 
+  
+}<span style="color:#75715e">//end of printMessage function scope
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">printMessage</span>(<span style="color:#e6db74">&#39;hello&#39;</span>, <span style="color:#ae81ff">3</span>);
+
+<span style="color:#75715e">//using i outside of its function scope results in an error
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Value of i is &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>); </code></pre></div>
 
 <p>In the above example we are able to declare a <code class="code-key">var</code> variable <code class="code-key">i</code> inside a for loop block within the function printMessage. Since we declared <code class="code-key">i</code> with the keyword <code class="code-key">var</code> we are able to use it outside of the for loop block.</p>
 
@@ -74,17 +92,68 @@
 
 <p>The <code class="code-key">let</code> keyword will give our declared variables block scope. We will no longer be able to use a <code class="code-key">let</code> variable outside of its block scope without getting an error.</p>
 
-<p><a class="jsbin-embed" href="http://jsbin.com/xufuweniri/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//start of printMessage function scope
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">printMessage</span>(<span style="color:#a6e22e">message</span>, <span style="color:#a6e22e">times</span>) {
+  
+ <span style="color:#75715e">//start of for loop block scope
+</span><span style="color:#75715e"></span> <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">i</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; <span style="color:#a6e22e">i</span> <span style="color:#f92672">&lt;</span> <span style="color:#a6e22e">times</span>; <span style="color:#a6e22e">i</span><span style="color:#f92672">++</span>) { 
+   
+   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">message</span>);
+   
+ }<span style="color:#75715e">//end of for loop block scope.
+</span><span style="color:#75715e"></span>  
+ <span style="color:#75715e">//using i outside of its block scope results in an error
+</span><span style="color:#75715e"></span> <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Value of i is &#39;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">i</span>); 
+  
+}<span style="color:#75715e">//end of printMessage function scope
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">printMessage</span>(<span style="color:#e6db74">&#39;hello&#39;</span>, <span style="color:#ae81ff">3</span>);</code></pre></div></p>
 
 <h2 id="const">const</h2>
 
 <p>Like <code class="code-key">let</code>, declaring a variable with the <code class="code-key">const</code> keyword will restrict that variable with block scope.</p>
 
-<p><a class="jsbin-embed" href="http://jsbin.com/ceqedejise/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//start of printMessage function scope
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">printMessage</span>(){
+  
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+  
+  <span style="color:#75715e">//start of if statement block scope
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">x</span> <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+    
+    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>;
+    
+    <span style="color:#75715e">//const variable used within declared block scope
+</span><span style="color:#75715e"></span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">y</span>);
+    
+  }<span style="color:#75715e">//end of if statement block scope
+</span><span style="color:#75715e"></span>  
+  <span style="color:#75715e">//error! const variable used outside block scope
+</span><span style="color:#75715e"></span>  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">y</span>);
+  
+}<span style="color:#75715e">//end of printMessage function scope
+</span><span style="color:#75715e"></span>
+<span style="color:#a6e22e">printMessage</span>();</code></pre></div></p>
 
 <p>The difference is that a variable declared with the <code class="code-key">const</code> keyword cannot be reassigned.</p>
 
-<p><a class="jsbin-embed" href="http://jsbin.com/vurerasoja/embed?js,console">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.1.0"></script></p>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#75715e">//declare let variable
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+
+<span style="color:#75715e">//use x variable with let keyword
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>);
+
+<span style="color:#75715e">//reassigning value of x is ok
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">x</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">9</span>;
+
+<span style="color:#75715e">//use reassigned x variable with let keyword
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">x</span>);
+
+<span style="color:#75715e">//declared const variable
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span>;
+
+<span style="color:#75715e">//error! once we try and reassign the value of const variable y
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">y</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">12</span>;</code></pre></div></p>
 
 <p>If you require that declared variables be able to change (e.g. <code class="code-key">for</code> loops) then <code class="code-key">let</code> is the ideal keyword of choice. In any other case using <code class="code-key">const</code> whenever possible is preffered.</p>
 
