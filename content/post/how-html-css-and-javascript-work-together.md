@@ -6,11 +6,10 @@ draft: false
 ## HTML
 
 Hypertext Markup Language gives structure and meaning to a page.
-<pre class="code">
-<code>
- &lt;button&gt;This is a button in HTML.&lt;/button&gt;
-</code>
-</pre>
+
+{{< highlight html >}}
+<button>This is a button in HTML.</button>
+{{< / highlight >}}
 
 The above code will render as:
 <pre class="code">
@@ -20,13 +19,12 @@ The above code will render as:
 ## CSS
 
 Cascading Style Sheets are text documents with rules that describe how the elements in HTML documents should be displayed.
-<pre class="code">
-<code>
- button {
-   color: red;
- }
-</code>
-</pre>
+
+{{< highlight css >}}
+button {
+  color: red;
+}
+{{< / highlight >}}
 
 Adding this line of code to our HTML file will render all text in button elements with the color red.
 <pre class="code">
@@ -36,17 +34,16 @@ Adding this line of code to our HTML file will render all text in button element
 ## JavaScript
 
 JavaScript allows users to interact with the page by adding behavior.
-<pre class="code">
-<code>
- const button = document.querySelector('button');
 
- const changeText = () => {
-  button.innerText = "Hello World!";
- }
+{{< highlight javascript >}}
+const button = document.querySelector('button');
 
- button.addEventListener('click', changeText);
-</code>
-</pre>
+const changeText = () => {
+  button.innerText = 'Hello World!';
+}
+
+button.addEventListener('click', changeText);
+{{< / highlight >}}
 
 This will let our button run the changeText function once it has been clicked.
 <pre class="code">

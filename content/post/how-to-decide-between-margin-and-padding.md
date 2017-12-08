@@ -10,31 +10,33 @@ The margin and padding css properties are usually used to give html elements som
 
 With margin the space is added outside of an elements border.
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+{{< highlight html >}}
+<!-- html code -->
+<div class="box box1">box1</div>
+<div class="box box2">box2</div> 
+{{< / highlight >}}
 
- .box1 {
-   background-color: orange;
- } <br>
- .box2 {
-   background-color: green;
- }
-</code>
-</pre>
+{{< highlight css>}}
+/* css code */
+.box {
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: orange;
+} 
+
+.box2 {
+  background-color: green;
+}
+{{< / highlight >}}
 
 Before adding margin our block elements stack right on top of each other.
 
@@ -66,33 +68,35 @@ flex-direction:column;">
 
 Now lets add some margin below box1 and above box2.
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+{{< highlight html >}}
+<!-- html code -->
+<div class="box box1">box1</div>
+<div class="box box2">box2</div> 
+{{< / highlight >}}
 
- .box1 {
-   background-color: orange;
-   margin-bottom: 20px; /* add some spacing below box1 */
- } <br>
- .box2 {
-   background-color: green;
-   margin-top: 10px; /* add some spacing above box2 ... maybe? */
+{{< highlight css>}}
+/* css code */
+.box {
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: orange;
+  margin-bottom: 20px; /* add some spacing below box1 */
+} 
+
+.box2 {
+  background-color: green;
+  margin-top: 10px; /* add some spacing above box2 ... maybe? */
  }
-</code>
-</pre>
+{{< / highlight >}}
 
 <div style="width: 200px; margin: 0 auto;">
 <div class="box1" style="height: 100px;
@@ -133,33 +137,35 @@ Another property of margin is that it is always transparent and it will not take
 
 Using our example above lets switch margin to padding.
 
-<pre class="code">
-<code>
- &lt;!-- html code --&gt;
- &lt;div class="box box1"&gt;box1&lt;/div&gt;
- &lt;div class="box box2"&gt;box2&lt;/div&gt; <br>
- /* css code */
- .box {
-   height: 100px;
-   width: 200px;
-   border: 1px solid black;
-   color: white;
-   cursor: pointer;
-   display: flex;
-   justify-content: center;
-   align-items: center;
- }
+{{< highlight html >}}
+<!-- html code -->
+<div class="box box1">box1</div>
+<div class="box box2">box2</div> 
+{{< / highlight >}}
 
- .box1 {
-   background-color: orange;
-   padding-bottom: 20px; /* add some spacing below box1 */
- } <br>
- .box2 {
-   background-color: green;
-   padding-top: 10px; /* add some spacing above box2 ... maybe? */
- }
-</code>
-</pre>
+{{< highlight css>}}
+/* css code */
+.box {
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  background-color: orange;
+  padding-bottom: 20px; /* add some spacing below box1 */
+} 
+
+.box2 {
+  background-color: green;
+  padding-top: 10px; /* add some spacing above box2 … maybe? */
+}
+{{< / highlight >}}
 
 <div style="display: flex; align-items:center;
 flex-direction:column;">
